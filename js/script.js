@@ -14,7 +14,7 @@ $(function(){
     speed: 300,
     autoplay: {
         delay: 5000,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
     },
     breakpoints: {
         1024: {
