@@ -1,0 +1,411 @@
+@import "variable";
+@import "button";
+
+// レスポンシブCSS
+
+@media screen and (max-width:768px) {
+
+
+
+
+    // ヘッダー
+    
+        .header-button {
+            display: none;
+        }
+    
+        .header-logo__txt_size_pd {
+            font-size: 20px;
+        }
+    
+        header {
+            height: 80px;
+        }
+
+        .nav1__items {
+            display: none;
+        }
+
+        .nav_toggle {
+            display: block;
+        }
+
+    
+    
+    // メインビジュアル
+    
+        .mv-inner_pd {
+            padding-top: 100px;
+        }
+    
+        .mv__img {
+            width: 400px;
+            object-fit: contain;
+        }
+    
+        .mv__txt {
+            padding-top: 90px;
+    
+            &_big {
+                font-size: 25px;
+            }
+        }
+    
+        .mv_bg-image {
+            background-position: top -100px right -200px;
+        }
+    
+    // feature
+    
+        .features-inner {
+            &_pd {
+                padding-top: 80px;
+                padding-bottom: 100px;
+            }
+        }
+    
+        .feature {
+    
+            &-3rd_pd {
+                padding-top: 60px;
+            }
+    
+            &__ttl_size {
+                font-size: 25px;
+            }
+    
+            &__img1_mg {
+                width: 300px;
+                margin-left: 30px;
+            }
+    
+            &__img2_mg {
+                width: 350px;
+                margin-right: 10px;
+            }
+    
+            &__img3_mg {
+                width: 350px;
+                margin-left: 30px;
+            }
+    
+            &__txt {
+    
+                &-1st_pd {
+                    padding-right: 20px;
+                }
+    
+                &-2nd_pd {
+                    padding-left: 10px;
+                }
+    
+                &-3rd_pd {
+                    padding-right: 20px;
+                }
+    
+                &_big {
+                    font-size: 18px;
+                    line-height: 1.69;
+                }
+        
+                &_small {
+                    font-size: 14px;
+        
+                    &-1st_pd {
+                        line-height: 1.5;
+                    }
+                }   
+            }
+        }
+    
+    // 料金表
+    
+        .price-inner_pd {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+    
+        .price-board {
+    
+            &_bg-color_shadow_margin {
+                margin-top: 40px;
+            }
+        }
+    
+    
+    // FAQ 
+    
+        .faq-contents {
+            &_pd {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+        }
+    
+    
+    // BLOG 
+    
+        .blog-inner_pd {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+    
+        .blog-card {
+            &__ttl_size {
+                font-size: 13px;
+            }
+    
+            &__day_size {
+                font-size: 10px;
+            }
+        }
+    
+    
+    // コンタクト
+    
+        .contact-inner_pd {
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+    
+        .form-1st {
+            margin-right: 90px;
+        }
+
+    
+    // フッター
+    
+        footer {
+            height: 80px;
+        }
+    
+        .copyright_pd_size {
+            padding-top: 40px;
+        }
+    
+    }
+
+
+@media screen and (max-width:425px) {
+
+// ヘッダー
+
+    .header-logo {
+        &__img_size {
+            width: 40px;
+            object-fit: contain;
+        }
+
+        &__txt_size_pd {
+            font-size: 16px;
+        }
+    }
+
+
+// メインビジュアル
+
+
+    .mv-inner_pd {
+        display: block;
+        position: relative;
+        height: 750px;
+        margin-top: 50px;
+    }
+
+    .mv__txt {
+        position: absolute;
+        bottom: 0;
+
+        &_pd {
+            padding-bottom: 40px;
+        }
+    }
+
+    .mv__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        object-fit: contain;
+    }
+
+    .mv_bg-image {
+        background-position: top -100px right -300px;
+    }
+
+
+// feature 
+
+    .feature {
+
+        &-3rd_pd {
+            padding-top: 80px;
+        }
+
+        &__contents {
+            display: block;
+            text-align: center;
+            position: relative;
+
+            &-2nd_pd {
+                height: 520px;
+            }
+
+            &-3rd_pd {
+            }
+        }
+
+        &__img1_mg {
+            margin-left: 0;
+            width: 280px;
+        }
+
+        &__img2_mg {
+            width: 300px;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            -ms-transform: translate(-30%,-50%);
+            -webkit-transform: translate(-30%,-50%);
+            transform: translate(-50%,-50%);
+        }
+
+        &__img3_mg {
+            margin-left: 0;
+            width: 300px;
+        }
+
+        &__txt {
+            width: 100%;
+            margin: 0 auto;
+
+            &-1st_pd {
+
+            }
+
+            &-2nd_pd {
+                padding-left: 0;
+                position: absolute;
+                bottom: 0;
+            }
+
+            &-3rd_pd {
+                padding-right: 0;
+            }
+        }
+    }
+
+
+// 料金表
+
+    .price-board {
+        &__menu_w_size_border {
+            font-size: 11px;
+            width: 150px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        &__price_size_pd {
+            font-size: 14px;
+            padding-left: 20px;
+        }
+    }
+
+
+// FAQ
+
+    .faq-contents {
+        &__question_size_border {
+            font-size: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &__answer_pd_bg-color_size_border {
+            font-size: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+
+// BLOG 
+
+    .blog-cards_pd {
+        display: block;
+        width: 100%;
+    }
+
+    .blog-card {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+        &__day_size {
+            font-size: 14px;
+        }
+    }
+
+    .blog-inner_pd {
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+
+// WORK 
+
+    .works-cards_pd {
+        padding-top: 30px;
+    }
+
+    .works-inner_pd {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .works-card {
+        &__ttl_size {
+            font-size: 12px;
+        }
+
+        &__list_size {
+            font-size: 10px;
+            bottom: 20px;
+        }
+
+        &__txt_pd_border {
+            padding: 10px 8px 20px 10px;
+        }
+
+        &__txt-1st_height {
+            height: 160px;
+        }
+
+        &__txt-2nd_height {
+            height: 159px;
+        }
+
+        &__txt-3rd_height {
+            height: 166px;
+        }
+
+    }
+
+// コンタクト
+
+    .form-1st {
+        margin-right: 0;
+    }
+
+    .forms_bg-color_pd_shadow {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+
+

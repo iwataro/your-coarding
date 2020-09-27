@@ -1,0 +1,53 @@
+$button_bg-color: linear-gradient(90deg,#FA41CC,#6020B0);
+
+$sub-title_color: #3BA6C9;
+
+$section_bg-color: #EEFBFB;
+
+@mixin section__ttl($main_color,$sub_color) {
+    text-align: center;
+
+    &-main_size {
+        font-size: 32px;
+        font-weight: 700;
+        color: $main_color;
+    }
+
+    &-sub_size_color_pd {
+        font-size: 16px;
+        color: $sub_color;
+        font-weight: 700;
+        padding-top: 10px;
+    }
+
+    @media screen and (max-width:768px) {
+        &-main_size {
+            font-size: 30px;
+            font-weight: 700;
+            color: $main_color;
+        }
+    
+        &-sub_size_color_pd {
+            font-size: 18px;
+            color: $sub_color;
+            font-weight: 700;
+            padding-top: 10px;
+        }
+    }
+
+    @media screen and (max-width:425px) {
+        &-main_size {
+            font-size: 25px;
+            font-weight: 700;
+            color: $main_color;
+        }
+    
+        &-sub_size_color_pd {
+            font-size: 14px;
+            color: $sub_color;
+            font-weight: 700;
+            padding-top: 10px;
+        }
+    }
+
+}
